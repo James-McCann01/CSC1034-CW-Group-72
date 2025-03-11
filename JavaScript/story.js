@@ -10,7 +10,7 @@ let storyLevel1 = [
         "option-1-id": 1,
         "option2": "Exit the ship through the airlock",
         "option-2-id": 12,
-        "backgroundImage": "Images//Backgrounds//in_ship_fire.png"
+        "backgroundImage": "Images//Background//in_ship_fire.png"
     },
     //Explore the wreckage
     {
@@ -35,7 +35,7 @@ let storyLevel1 = [
         "option-2-id": 4,
         "item-picked-up": true,
         "item":"Images//InventoryIcons//Flashlight.png",
-        "backgroundImage": "Images//Backgrounds//burning_bridge.png"
+        "backgroundImage": "Images//Background//burning_bridge.png"
     },
     {
         "id": 3,
@@ -139,7 +139,7 @@ let storyLevel1 = [
         With a sigh of relief you carry on.`,
         "option1":"Continue",
         "option-1-id":13,
-        "backgroundImage": "Images//Backgrounds//PlaneCrash.png"
+        "backgroundImage": "Images//Background//PlaneCrash.png"
     },
     {
         "id":13,
@@ -150,7 +150,7 @@ let storyLevel1 = [
         "option-1-id":21,
         "option2":"Scavenge for items off your crew",
         "option-2-id":14, 
-        "backgroundImage": "Images//Backgrounds//outside_ship.png"
+        "backgroundImage": "Images//Background//outside_ship.png"
     },
     
     {
@@ -237,7 +237,7 @@ let storyLevel2 = [
         "option-2-id":1, 
         "item-picked-up": null,
         "item": "Images//InventoryIcons//",
-        "backgroundImage": "Images//Backgrounds//ruins.png",
+        "backgroundImage": "Images//Background//ruins.png",
     },
 ]
 //Level 3 is Alien Base
@@ -252,6 +252,6 @@ let storyLevel3 = [
         "option-2-id":1, 
         "item-picked-up": null,
         "item": "Images//InventoryIcons//",
-        "backgroundImage": "Images//Backgrounds//",
+        "backgroundImage": "Images//Background//",
     },
 ]
