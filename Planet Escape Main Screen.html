@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planet Escape</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- <header>
+            <h1>Planet Escape</h1>
+        </header> -->
+        
+        <div class="optionBarDiv">
+                <div class="optionBar">
+                    <span>Leaderboard</span>
+                    <span>Load Save</span>
+                    <span>Achievements</span>
+                    <span>Home</span>
+                    <span>Account</span>
+                    <!-- <span>Settings</span> -->
+                </div>
+        </div>
+
+        <div class="replacementOptionBar">
+            <p>This will be smaller</p>
+        </div>
+
+
+        <div class="main">
+            <div class="leftSideMain">
+                
+                <div class="textDisplay">
+                    <p id="gameText"></p>
+                </div>
+
+                <div class="oxygenContainer">
+                    <div class="oxygen-bar" id="oxygenBar"></div>
+                    <p class="oxygen-text" id="oxygenText"></p>
+                </div>
+                
+                <div class="bottomLeftSide">
+                    <div class ="MiniMapContainer"> <!--Class hasnt been used for anything yet-->
+                        <img id="MiniMap" src="Images/MiniMap.png" alt="MiniMap" width="20%" height="auto" >
+                    </div>
+                    <div class="inventory">
+                        <div class="inventory-slot" id="slot1"></div>
+                        <div class="inventory-slot" id="slot2"></div>
+                        <div class="inventory-slot" id="slot3"></div>
+                        <div class="inventory-slot" id="slot4"></div>
+                    </div>
+                </div>
+            
+                
+            </div>
+
+            <div class="rightSideMain" id="backgroundImage">
+                <!-- <img id="backgroundImage"src="Images/PlaneCrash.png" alt="PlaneCrash" width="100%" height="auto"> -->
+            </div>
+            
+        </div>
+        <script src="JavaScript/main.js"></script>
+        <script src="JavaScript/story.js"></script>
+    </body>
+</html>
