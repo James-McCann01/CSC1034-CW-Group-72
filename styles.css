@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/* The styling for the body */
+body{
+    /* 
+    everything in the body should flex into a column
+    be centered 
+    and have font orbitron whith serif as a backup font*/
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color:#1A002B; /*Dark Purple*/
+    font-family: 'Orbitron', serif;
+}
+
+
+/* Styling for header where title is*/
+header{
+    color: white;
+}
+
+/* Styling for the bar above main */
+.optionBarDiv{
+    background-color: #1A002B; /*Dark purple*/
+    width: 95%;
+}
+
+/* This is the part that contains the options */
+.optionBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    /* Space between items */
+    gap: 1%; 
+    padding: 1%;
+    margin: 1%;
+
+    background-color: #2ECCFA; /* Electric Blue background */
+    border-radius: 15px; /*Adds the curves to the bar*/
+    border: white, solid, 2px;  /*Adds a white border*/
+}
+
+/* Styling for the span tags that are part of the optionBar */
+.optionBar span {
+    cursor: pointer;    /*Changes the cursor to the hand icon*/ 
+    padding: 3vb;
+    background: #EAEAEA; /* #EAEAEA slightly less intense white*/
+    color: black;
+    border-radius: 8px;
+    transition: all 0.3s ease; /*Adds a smooth transition between hover style*/
+    font-weight: bold;
+    flex: 1;
+}
+
+.optionBar span:hover {
+    background: lightgray; /* Light grey on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.replacementOptionBar{
+    display: none;  /*hidden initaly*/
+    color: aqua;
+}
+
+/* Styling for the main part of the page */
+.main{
+    background-color:#2ECCFA;/*Electric Blue*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    width: 95%; 
+}
+
+
+/* Styling for where the minimap, inventory, oxygen timer, and text will be */
+.leftSideMain{
+    color: black;
+    display: flex;
+    flex:6;
+    flex-direction: column;
+    background-color: #EAEAEA; /*#EAEAEA slightly less intense white*/
+    border: 2px solid #1A002B; /* Dark-Purple border */
+    padding: 1%; /* Adds space inside the border */
+    margin: 1%; /* Adds space outside the border */
+    text-align: left;
+    position: relative;
+}
+
+.rightSideMain{
+    color: black;
+    display: flex;
+    flex:4;
+    flex-direction: column;
+    background-color: #EAEAEA; /*#EAEAEA slightly less intense white*/
+    border: 2px solid #1A002B; /* Dark-Purple border */
+    padding: 1%; /* Adds space inside the border */
+    margin: 1%; /* Adds space outside the border */
+    text-align: left;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.bottomLeftSide{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#MiniMap{
+    margin: 1%; /*Distance from the other elements*/
+    float: left; /*Pushes image to left*/
+    border: #1A002B solid 2px; /*Dark purple border*/
+    border-radius: 10px;
+}
+
+#gameText{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+.inventory {
+    margin: 2%;
+    padding: 5px;
+    border: 2px solid black;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inventory-slot {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 24px;
+}
+
+.oxygenContainer {
+    width: 95%;
+    margin: 1%;
+}
+.oxygen-bar {
+    width: 100%;
+    height: 50%;
+    background-color: green;
+    transition: width 1s linear, background-color 1s linear; /*Allows for smoother bar decreasing*/
+
+}
+.oxygen-text {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.textDisplay{
+    background-color: lightgray;
+    border: #1A002B solid 2px;
+    height: 45%;
+}
+
+/* 
+Sizing when screen gets to small
+Will need changed to make the new design work on a smaller screen
+*/
+@media (max-width: 768px){
+    body, header{
+        height: auto;
+    }
+    .optionBar{
+        display: none;
+    }
+    .replacementOptionBar{
+        display: block;
+    }
+
+
+    .main{
+        flex-direction: column-reverse;
+        height: 100vh;
+    
+    }
+
+
+
+    .leftSideMain{
+        flex:1;
+        flex-direction: column;
+    }
+
+    .rightSideMain{
+        flex: 1;
+    }
+}
